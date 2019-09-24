@@ -1,7 +1,7 @@
 Bundle-Name: RemuneracionTotal
-Bundle-SymbolicName: com.consistent.cuervo
+Bundle-SymbolicName: com.consistent.remuneracion
 Bundle-Version: 1.0.0
-Export-Package: com.consistent.cuervo.constants
+Export-Package: com.consistent.remuneracion.constants
 -contract: JavaPortlet,JavaServlet
 -jsp: *.jsp,*.jspf
 -plugin.jsp: com.liferay.ant.bnd.jsp.JspAnalyzerPlugin

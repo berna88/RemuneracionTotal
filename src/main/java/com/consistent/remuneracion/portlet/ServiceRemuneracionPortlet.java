@@ -33,7 +33,7 @@ public class ServiceRemuneracionPortlet extends MVCPortlet {
 	public void render(RenderRequest renderRequest, RenderResponse renderResponse)
 			throws IOException, PortletException {
 		// TODO Auto-generated method stub
-		System.out.println("render");
+		
 		super.render(renderRequest, renderResponse);
 	}
 }
