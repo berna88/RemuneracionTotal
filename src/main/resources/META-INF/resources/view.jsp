@@ -13,23 +13,6 @@
 	    display: block;
 	    margin: auto;
 	}
-	.colapsable-cuervo .accordion .card{
-		background-color: #181818;
-	}
-	.colapsable-cuervo .accordion .card-header{
-		border: 1px solid #CCB874;
-		padding: 0px;
-	}
-	.colapsable-cuervo .accordion .btn{
-		color: #CCB874;
-	}
-	
-	.colapsable-cuervo .btn-link:focus {
-    box-shadow: none;
-    }
-	.colapsable-cuervo .accordion .btn-link:hover{
-		text-decoration: none;
-	}
 	.collapsible {
   background-color: #777;
   color: white;
@@ -60,6 +43,10 @@
     color: #CCB874;
     padding: .7rem .6rem;
 }
+    
+.collapsible:focus{
+	outline: none;
+}
 .hr-remuneracion{
 	border-top: 1px solid #CCB874;
     width: 97.5%;
@@ -68,8 +55,23 @@
     margin: auto;
 }
 
+.banner-remuneracion{
+  width: 100%;
+  height: 148px;
+  background-image: url('<%=request.getContextPath()+"/img/tramites-solicitudes.jpg"%>');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4rem;
+}
     
 </style>
+
+<div class="tituloSeccion-contenedor d-flex align-items-center justify-content-center banner-remuneracion">
+	<div class="mascara-tituloSeccion"></div>
+	<h1 class="tituloSeccion position-absolute">
+				Remuneración Total
+	</h1>
+</div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -97,7 +99,20 @@
 				<div class="col-md-12 colapsable-remuneracion">
 					<button type="button" class="collapsible">Open Collapsible</button>
 					<div class="content">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					  <table>
+						  <thead>
+						  	<tr>
+						      <th>Month</th>
+						      <th>Savings</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						  	<tr>
+						      <td>January</td>
+						      <td>$100</td>
+						    </tr>
+						  </tbody>
+					  </table>
 					</div>
 				</div>
 				<div class="col-md-12 colapsable-remuneracion">
