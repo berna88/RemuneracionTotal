@@ -63,7 +63,10 @@
   background-size: cover;
   margin-bottom: 4rem;
 }
-    
+td.tip:hover {
+    cursor: help;
+    position: relative;
+} 
 </style>
 
 <div class="tituloSeccion-contenedor d-flex align-items-center justify-content-center banner-remuneracion">
@@ -108,7 +111,7 @@
 						  </thead>
 						  <tbody>
 						  	<tr>
-						      <td>January</td>
+						      <td title="This is Title" class="tip">January</td>
 						      <td>$100</td>
 						    </tr>
 						  </tbody>
