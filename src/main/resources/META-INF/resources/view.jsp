@@ -9,9 +9,9 @@
 	#imagen-recursosHumanos{
 		height: auto;
 	    width: 100%;
-	    max-width: 600px;
 	    display: block;
 	    margin: auto;
+	    opacity: .6;
 	}
 	.collapsible {
   background-color: #777;
@@ -31,7 +31,7 @@
 
 .content {
   padding: 0px;
-  display: none;
+  display: block;
   overflow: hidden;
   background: #181818;
   height: auto;
@@ -205,13 +205,14 @@ td.tip:hover span {
 							      <td class="tip"><span><h5>Fondo de ahorro</h5><p>fondo de ahorro</p></span>Fondo de ahorro</td>
 							      <td>$100</td>
 							      <td>$100</td>
+							    </tr>
 							    <tr>
 							      <td class="tip"> <div class="bottom10"><span><h5>Vales de despensa</h5><p>vales de despensa</p></span>Vales de despensa</div></td>
 							      <td><div class="bottom10">$100</div></td>
 							      <td><div class="bottom10">$100</div></td>
 							    </tr>
 							    <tr class="ulti">
-							      <td title="This is Title" class="tip"><div class="top10">Total</div></td>
+							      <td class="tip"><div class="top10">Total</div></td>
 							      <td> <div class="top10">$100</div></td>
 							      <td> <div class="top10">$100</div></td>
 							    </tr>
@@ -223,13 +224,95 @@ td.tip:hover span {
 				<div class="col-md-12 colapsable-remuneracion">
 					<button type="button" class="collapsible">Compensación Variable</button>
 					<div class="content">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    <div class="table-responsive">
+						  <table class="table-remuneracion" cellpadding="5">
+							  <thead>
+							  	<tr>
+							      <th></th>
+							      <th style="width: 9rem;">Mensual</th>
+							      <th style="width: 9rem;">Anual</th>
+							    </tr>
+							    
+							  </thead> 
+							  <tbody>
+							  	<tr>
+							      <td class="tip"><span><h5>Bono anual</h5><p>bono anual</p></span> <div class="top10">Bono Anual</div></td>
+							      <td><div class="top10"></div></td>
+							      <td><div class="top10">$10,000.00</div></td>
+							    </tr>
+							    <tr>
+							      <td class="tip"><span><h5>Bono Estratégico</h5><p>bono estrategico</p></span>Bono Estratégico</td>
+							      <td></td>
+							      <td>$100</td>
+							    </tr>
+							    <tr>
+							      <td class="tip"><span><h5>Incentivos</h5><p>incentivos</p></span>incentivos</td>
+							      <td></td>
+							      <td>$100</td>
+							    </tr>
+							    <tr>
+							      <td class="tip"><span><h5>PTU</h5><p>ptu</p></span>PTU</td>
+							      <td></td>
+							      <td>$100</td>
+							    </tr>
+							      
+							    <tr class="ulti">
+							      <td class="tip"><div class="top10">Total</div></td>
+							      <td> <div class="top10"></div></td>
+							      <td> <div class="top10">$100</div></td>
+							    </tr>
+							  </tbody>
+						  </table>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-12 colapsable-remuneracion">
 					<button type="button" class="collapsible">Mis Beneficios</button>
 					<div class="content">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div class="table-responsive">
+						  <table class="table-remuneracion" cellpadding="5">
+							  <thead>
+							  	<tr>
+							      <th></th>
+							      <th style="width: 9rem;">Mensual</th>
+							      <th style="width: 9rem;">Anual</th>
+							    </tr>
+							    
+							  </thead> 
+							  <tbody>
+							  	<tr>
+							      <td class="tip"><span><h5>Auto</h5><p>auto</p></span> <div class="top10">Auto</div></td>
+							      <td><div class="top10"></div></td>
+							      <td><div class="top10">$57,500.00</div></td>
+							    </tr>
+							    <tr>
+							      <td class="tip"><span><h5>SGMM*</h5><p>sgmm</p></span>SGMM*</td>
+							      <td></td>
+							      <td>$3,000</td>
+							    </tr>
+							    <tr>
+							      <td class="tip"><span><h5>Check UP*</h5><p>check up</p></span>Check UP*</td>
+							      <td></td>
+							      <td>$14,000</td>
+							    </tr>
+							    <tr>
+							      <td class="tip"><span><h5>Seguro de vida*</h5><p>seguro de vida</p></span>Seguro de vida*</td>
+							      <td></td>
+							      <td>$1,500</td>
+							    </tr>
+							      <tr>
+							      <td class="tip"><span><h5>Plan de pensiones*</h5><p>plan de pensiones</p></span>Plan de pensiones*</td>
+							      <td></td>
+							      <td>$2,300</td>
+							    </tr>
+							    <tr class="ulti">
+							      <td class="tip"><div class="top10">Total</div></td>
+							      <td> <div class="top10"></div></td>
+							      <td> <div class="top10">$100</div></td>
+							    </tr>
+							  </tbody>
+						  </table>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -237,17 +320,58 @@ td.tip:hover span {
 		<div class="col-md-6">
 			<div class="row">
 				<div class="col-md-12">
-					<div id="chartdiv"></div>
-				</div>
+					<div style="width: 100%;
+    background: black;
+    padding: 30px 30px;
+    border-radius: 5%;
+    margin-bottom: 2.2rem;">
+						<hgroup style="text-align: right;">
+							<h1 style="color: #cbb874;">$335,603</h1>
+							<h6>Compensación total anual</h6>
+						</hgroup>
+						<div class="grafica-remuneracion">
+							<div id="chartdiv"></div>
+						</div>
+						<hgroup>
+							<h6>Compensación Garantizada ( 77% )</h6>
+							<h6>Compensación Variable ( 13% )</h6>
+							<h6>Mis Beneficios ( 10% )</h6>
+						</hgroup>
+					</div>
+				</div><!-- Fin de sección de grafica -->
 				<div class="col-md-12">
-					<img id="imagen-recursosHumanos" alt="" src='<%=request.getContextPath()+"/img/recursoshumanos.jpg"%>'>
-					<h6>Recursos Humanos</h6>
-					<p>Consulta todos los beneficios que tenemos para ti. (Comedor, sala de lactancia, transporte y más...)</p>
-					</img>
-				</div>
+					<div style="position: relative;width: 100%; background: black;">
+						<img id="imagen-recursosHumanos" alt="" src='<%=request.getContextPath()+"/img/recursoshumanos.jpg"%>' />
+						<h3 style="position: absolute;top: 2rem;width: 100%;text-align: center;text-transform: uppercase;">Recursos Humanos</h3>
+						<p style="
+    position: absolute;
+    bottom: 0;
+    width: 64%;
+    margin-right: 18%;
+    margin-left: 18%;
+    border-left: solid 4px #cbb874;
+    padding: 0px 8px;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 500;">Consulta todos los beneficios que tenemos para ti. (Comedor, sala de lactancia, transporte y más...)</p>
+					</div>
+				</div><!-- Fin de sección de banner -->
 			</div>
+		</div><!-- Fin de sección de columna 2 (grafica y banner) -->
+	</div><!-- Fin de sección (collapsable, grafica y banner) -->
+	<div class="row" style="margin-top: 1.5rem;">
+		<div class="col-md-6" style="line-height: 1rem;color: #838383;">
+			<small>*Costo de acuerdo a póliza de grupo</small><br>
+			<small>**De cuerdo a </small>
 		</div>
-		
+		<div class="offset-md-6">
+		</div>
+		<div class="col-md-6" style="margin-top: 3.5rem;">
+			<strong>¿Tienes alguna duda?</strong><br>
+			<p style="color: #838383;">Contáctamos remuneraciontototal@cuervo.com.mx</p>
+		</div>
+		<div class="offset-md-6">
+		</div>
 	</div>
 </div>
 <script type="text/javascript">
@@ -255,9 +379,14 @@ var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
+	console.log("hola");
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
+    if(content.style.display === ""){
+    	content.style.display = "block";
+    } 
+    console.log(content.style.display);
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
