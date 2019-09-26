@@ -241,6 +241,9 @@ td.tip:hover span {
 				</div>
 				<div class="col-md-12">
 					<img id="imagen-recursosHumanos" alt="" src='<%=request.getContextPath()+"/img/recursoshumanos.jpg"%>'>
+					<h6>Recursos Humanos</h6>
+					<p>Consulta todos los beneficios que tenemos para ti. (Comedor, sala de lactancia, transporte y más...)</p>
+					</img>
 				</div>
 			</div>
 		</div>
