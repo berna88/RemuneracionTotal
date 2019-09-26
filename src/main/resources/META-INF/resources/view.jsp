@@ -1,11 +1,9 @@
 <%@ include file="/init.jsp" %>
 
-<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()+"/css/export.css"%>'>
+<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()+"/css/2.8.0/Chart.min.css"%>'>
+<script src='<%=request.getContextPath()+"/js/2.8.0/Chart.min.js"%>'></script>
 <style>
-	#chartdiv {
-	  width: 100%;
-	  height: 500px;
-	}
+	
 	#imagen-recursosHumanos{
 		height: auto;
 	    width: 100%;
@@ -140,6 +138,11 @@ td.tip:hover span {
   margin-bottom: 4rem;
 }
 
+</style>
+
+<style>
+/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
 </style>
 
 <div class="tituloSeccion-contenedor d-flex align-items-center justify-content-center banner-remuneracion">
@@ -329,8 +332,8 @@ td.tip:hover span {
 							<h1 style="color: #cbb874;">$335,603</h1>
 							<h6>Compensación total anual</h6>
 						</hgroup>
-						<div class="grafica-remuneracion">
-							<div id="chartdiv"></div>
+						<div class="grafica-remuneracion">					
+							<canvas id="chart-area" style="display: block; width: 762px; height: 381px;" width="762" height="381" class="chartjs-render-monitor"></canvas>
 						</div>
 						<hgroup>
 							<h6>Compensación Garantizada ( 77% )</h6>
@@ -394,10 +397,68 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
+</script>
+<script>
+window.chartColors = {
+	      red: 'rgb(255, 99, 132)',
+	      orange: 'rgb(255, 159, 64)',
+	      yellow: 'rgb(255, 205, 86)',
+	      green: 'rgb(75, 192, 192)',
+	      blue: 'rgb(54, 162, 235)',
+	      purple: 'rgb(153, 102, 255)',
+	      grey: 'rgb(201, 203, 207)'
+	    };
+
+var randomScalingFactor = function() {
+	return Math.round(Math.random() * 100);
+};
+
+var config = {
+	type: 'pie',
+	data: {
+		datasets: [{
+			data: [
+				randomScalingFactor(),
+				randomScalingFactor(),
+				randomScalingFactor(),
+				randomScalingFactor(),
+				randomScalingFactor(),
+			],
+			backgroundColor: [
+				window.chartColors.red,
+				window.chartColors.orange,
+				window.chartColors.yellow,
+				window.chartColors.green,
+				window.chartColors.blue,
+			],
+			label: 'Dataset 1'
+		}],
+		labels: [
+			'Rojo',
+			'Orange',
+			'Yellow',
+			'Green',
+			'Blue'
+		]
+	},
+	options: {
+		responsive: true
+	}
+};
+
+window.onload = function() {
+	var ctx = document.getElementById('chart-area').getContext('2d');
+	window.myPie = new Chart(ctx, config);
+};
+
+
 </script>
 
 
+<%-- 
 <script src='<%=request.getContextPath()+"/js/amcharts.js"%>'></script>
 <script src='<%=request.getContextPath()+"/js/pie.js"%>'></script>
 <script src='<%=request.getContextPath()+"/js/export.min.js"%>'></script>
-<script src='<%=request.getContextPath()+"/js/custom.js"%>'></script>
+<script src='<%=request.getContextPath()+"/js/custom.js"%>'></script> --%>

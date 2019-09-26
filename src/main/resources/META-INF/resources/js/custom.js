@@ -32,9 +32,9 @@ var chart = AmCharts.makeChart( "chartdiv", {
   "valueField": "litres",
   "titleField": "country",
    "balloon":{
-   "fixedPosition":true
+   "fixedPosition":false
   },
   "export": {
-    "enabled": true
+    "enabled": false
   }
 } );
