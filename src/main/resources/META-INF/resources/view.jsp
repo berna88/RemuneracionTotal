@@ -216,8 +216,8 @@ td.tip:hover span {
 							    </tr>
 							    <tr class="ulti">
 							      <td class="tip"><div class="top10">Total</div></td>
-							      <td> <div class="top10">$100</div></td>
-							      <td> <div class="top10">$100</div></td>
+							      <td> <div id="garantizada-total-mensual" data-garantizada-total-mensual='100' class="top10">$100</div></td>
+							      <td> <div id="garantizada-total-anual"   data-garantizada-total-anual='100' class="top10">$100</div></td>
 							    </tr>
 							  </tbody>
 						  </table>
@@ -333,7 +333,7 @@ td.tip:hover span {
 							<h6>Compensación total anual</h6>
 						</hgroup>
 						<div class="grafica-remuneracion">					
-							<canvas id="chart-area" style="display: block; width: 762px; height: 381px;" width="762" height="381" class="chartjs-render-monitor"></canvas>
+							<canvas id="chart-area" style="display: block;height: auto;width: 100%;" height="300" class="chartjs-render-monitor"></canvas>
 						</div>
 						<hgroup>
 							<h6>Compensación Garantizada ( 77% )</h6>
@@ -401,6 +401,11 @@ for (i = 0; i < coll.length; i++) {
 
 </script>
 <script>
+
+var totalgm = document.getElementById("garantizada-total-mensual");
+var fullgm = totalgm.getAttribute('data-garantizada-total-mensual');
+var gm = parseFloat(fullgm);
+
 window.chartColors = {
 	      red: 'rgb(255, 99, 132)',
 	      orange: 'rgb(255, 159, 64)',
@@ -411,36 +416,27 @@ window.chartColors = {
 	      grey: 'rgb(201, 203, 207)'
 	    };
 
-var randomScalingFactor = function() {
-	return Math.round(Math.random() * 100);
-};
-
 var config = {
 	type: 'pie',
 	data: {
 		datasets: [{
 			data: [
-				randomScalingFactor(),
-				randomScalingFactor(),
-				randomScalingFactor(),
-				randomScalingFactor(),
-				randomScalingFactor(),
+				gm,
+				20,
+				10,
 			],
 			backgroundColor: [
 				window.chartColors.red,
 				window.chartColors.orange,
 				window.chartColors.yellow,
-				window.chartColors.green,
-				window.chartColors.blue,
 			],
-			label: 'Dataset 1'
+			label: 'Remuneracion'
 		}],
 		labels: [
-			'Rojo',
-			'Orange',
-			'Yellow',
-			'Green',
-			'Blue'
+			'Garantizada',
+			'Variable',
+			'Beneficios'
+			
 		]
 	},
 	options: {
@@ -452,6 +448,8 @@ window.onload = function() {
 	var ctx = document.getElementById('chart-area').getContext('2d');
 	window.myPie = new Chart(ctx, config);
 };
+
+
 
 
 </script>
