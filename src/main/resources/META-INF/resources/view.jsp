@@ -422,7 +422,7 @@ var config = {
 		datasets: [{
 			data: [
 				gm,
-				20,
+				30,
 				10,
 			],
 			backgroundColor: [
