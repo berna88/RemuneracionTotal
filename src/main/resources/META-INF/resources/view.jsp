@@ -1,179 +1,40 @@
 <%@ include file="/init.jsp" %>
 
 <link rel="stylesheet" type="text/css" href='<%=request.getContextPath()+"/css/2.8.0/Chart.min.css"%>'>
+<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()+"/css/remuneracion.css"%>'>
+
 <script src='<%=request.getContextPath()+"/js/2.8.0/Chart.min.js"%>'></script>
-<style>
-	
-	#imagen-recursosHumanos{
-		height: auto;
-	    width: 100%;
-	    display: block;
-	    margin: auto;
-	    opacity: .6;
-	}
-	.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
 
-.content {
-  padding: 0px;
-  display: block;
-  overflow: hidden;
-  background: #181818;
-  height: auto;
-}
-.colapsable-remuneracion .collapsible{
-	background: #181818;
-    margin-top: 15px;
-    border: solid 1px #CCB874;
-    color: #CCB874;
-    padding: .7rem .6rem;
-}
-    
-.collapsible:focus{
-	outline: none;
-}
-.hr-remuneracion{
-	border-top: 1px solid #CCB874;
-    width: 97.5%;
-    margin: 0px;
-    display: block;
-    margin: auto;
-}
-.table-remuneracion{
-	width: 100%;
-    margin-top: 15px;
-    border-collapse: collapse;
-}
-
-.tablehead-remuneracion, th{
-	border-bottom: solid 2px #838383;
-	text-align: center;
-    font-weight: 400;
-}
-.tablehead-remuneracion, .ulti:nth-last-of-type(1){
-	border-top: solid 2px #838383;
-	border-collapse: collapse;
-}
-.tablehead-remuneracion, td:nth-last-child(-n+2){
-	text-align: right;
-}
-.top10{
-	margin-top: 12px;
-}
-.bottom10{
-	margin-bottom: 12px;
-}
-td.tip:hover {
-    cursor: pointer;
-    position: relative;
-}
-td.tip span {
-    display: none;
-}
-
-td.tip span:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 16px solid #cbb874;
-    border-left: 1px solid transparent;
-    margin: 25px -24px 0px -29px;
-}
-td.tip span:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 13px solid black;
-    border-left: 1px solid transparent;
-    margin: -46px -22px 0px -26px;
-}
-td.tip span h5{
-    font-size: 1em;
-    border-bottom: solid 1px #CCB874;
-    padding-bottom: 8px;
-}
-td.tip span p{
-    font-size: .90em;
-}
-td.tip:hover span {
-    display: block;
-    z-index: 2;
-    left: 123px;
-    margin: 6px;
-    width: 200px;
-    position: absolute;
-    top: -28px;
-    text-decoration: none;
-    background: black;
-    border: solid 1px #CCB874;
-    border-radius: 10px;
-    padding: 6px 12px;
-} 
-    
-.banner-remuneracion{
-  width: 100%;
-  height: 148px;
-  background-image: url('<%=request.getContextPath()+"/img/remuneracionTotalBanner.jpg"%>');
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 4rem;
-}
-
-</style>
-
-<style>
-/* Chart.js */
-@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
-</style>
-
-<div class="tituloSeccion-contenedor d-flex align-items-center justify-content-center banner-remuneracion">
+<div class="tituloSeccion-contenedor d-flex align-items-center justify-content-center banner-remuneracion" style="background-image: url('<%=request.getContextPath()+"/img/remuneracionTotalBanner.jpg"%>');">
 	<div class="mascara-tituloSeccion"></div>
 	<h1 class="tituloSeccion position-absolute">
 				Remuneración Total
 	</h1>
 </div>
-<div class="container">
+<div class="container" style="font-family: Source Sans Pro">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row align-items-center" >
 				<div class="col-md-4">
 					<hgroup>
-						<h4>Robles Marin</h4>
-						<h2>Marian</h2>
+						<h4 style="font-weight: 300;line-height: .9;">Robles Marin</h4>
+						<h2><strong class="remuneracion-fontWeight">Marian</strong></h2>
 					</hgroup>
 				</div>
 				<div class="offset-md-2">
 				</div>
 				<div class="col-md-6" style="line-height: .8rem;text-align: right;">
-					<p><strong>Banda: </strong> VIII</p>
-					<p><strong>Puesto: </strong> Coordinador Gral. RH</p>
-					<p><strong>Fecha de ingreso: </strong> Miercoles, Noviembre 23, 2005</p>
+					<p><strong class="remuneracion-fontWeight">Banda: </strong> VIII</p>
+					<p><strong class="remuneracion-fontWeight">Puesto: </strong> Coordinador Gral. RH</p>
+					<p><strong class="remuneracion-fontWeight">Fecha de ingreso: </strong> Miercoles, Noviembre 23, 2005</p>
 				</div>
 				<hr class="hr-remuneracion">
 			</div>
 		</div>
 	</div>
 	<div class="row" style="margin-top: 3rem;">
-		<div class="col-md-6">
+		<div class="col-md-12 col-lg-6 col-xl-7">
 			<div class="row">
 				<div class="col-md-12 colapsable-remuneracion">
 					<button type="button" class="collapsible">Compensación Garantizada</button>
@@ -183,8 +44,8 @@ td.tip:hover span {
 							  <thead>
 							  	<tr>
 							      <th></th>
-							      <th style="width: 9rem;">Mensual</th>
-							      <th style="width: 9rem;">Anual</th>
+							      <th class="thead-title">Mensual</th>
+							      <th class="thead-title">Anual</th>
 							    </tr>
 							    
 							  </thead> 
@@ -232,8 +93,8 @@ td.tip:hover span {
 							  <thead>
 							  	<tr>
 							      <th></th>
-							      <th style="width: 9rem;">Mensual</th>
-							      <th style="width: 9rem;">Anual</th>
+							      <th class="thead-title">Mensual</th>
+							      <th class="thead-title">Anual</th>
 							    </tr>
 							    
 							  </thead> 
@@ -277,8 +138,8 @@ td.tip:hover span {
 							  <thead>
 							  	<tr>
 							      <th></th>
-							      <th style="width: 9rem;">Mensual</th>
-							      <th style="width: 9rem;">Anual</th>
+							      <th class="thead-title">Mensual</th>
+							      <th class="thead-title">Anual</th>
 							    </tr>
 							    
 							  </thead> 
@@ -320,25 +181,21 @@ td.tip:hover span {
 				</div>
 			</div>
 		</div><!-- Fin seccion colapsable -->
-		<div class="col-md-6">
+		<div class="col-md-12 col-lg-6 col-xl-5">
 			<div class="row">
 				<div class="col-md-12">
-					<div style="width: 100%;
-    background: black;
-    padding: 30px 30px;
-    border-radius: 5%;
-    margin-bottom: 2.2rem;">
+					<div class="fondo-grafica">
 						<hgroup style="text-align: right;">
 							<h1 style="color: #cbb874;">$335,603</h1>
 							<h6>Compensación total anual</h6>
 						</hgroup>
-						<div class="grafica-remuneracion">					
+						<div class="grafica-remuneracion top3">					
 							<canvas id="chart-area" style="display: block;height: auto;width: 100%;" height="300" class="chartjs-render-monitor"></canvas>
 						</div>
-						<hgroup>
-							<h6>Compensación Garantizada ( 77% )</h6>
-							<h6>Compensación Variable ( 13% )</h6>
-							<h6>Mis Beneficios ( 10% )</h6>
+						<hgroup class="top3">
+							<h5 class="line-h">Compensación Garantizada ( 77% )</h5>
+							<h5 class="line-h">Compensación Variable ( 13% )</h5>
+							<h5 class="line-h">Mis Beneficios ( 10% )</h5>
 						</hgroup>
 					</div>
 				</div><!-- Fin de sección de grafica -->
@@ -370,93 +227,13 @@ td.tip:hover span {
 		<div class="offset-md-6">
 		</div>
 		<div class="col-md-6" style="margin-top: 3.5rem;">
-			<strong>¿Tienes alguna duda?</strong><br>
+			<strong><img alt="" src='<%=request.getContextPath()+"/img/ayuda-remuneracion.svg"%>' width="20" heigth="20" />¿Tienes alguna duda?</strong><br>
 			<p style="color: #838383;">Contáctamos remuneraciontototal@cuervo.com.mx</p>
 		</div>
 		<div class="offset-md-6">
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-	console.log("hola");
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if(content.style.display === ""){
-    	content.style.display = "block";
-    } 
-    console.log(content.style.display);
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
-
-</script>
-<script>
-
-var totalgm = document.getElementById("garantizada-total-mensual");
-var fullgm = totalgm.getAttribute('data-garantizada-total-mensual');
-var gm = parseFloat(fullgm);
-
-window.chartColors = {
-	      red: 'rgb(255, 99, 132)',
-	      orange: 'rgb(255, 159, 64)',
-	      yellow: 'rgb(255, 205, 86)',
-	      green: 'rgb(75, 192, 192)',
-	      blue: 'rgb(54, 162, 235)',
-	      purple: 'rgb(153, 102, 255)',
-	      grey: 'rgb(201, 203, 207)'
-	    };
-
-var config = {
-	type: 'pie',
-	data: {
-		datasets: [{
-			data: [
-				gm,
-				30,
-				10,
-			],
-			backgroundColor: [
-				window.chartColors.red,
-				window.chartColors.orange,
-				window.chartColors.yellow,
-			],
-			label: 'Remuneracion'
-		}],
-		labels: [
-			'Garantizada',
-			'Variable',
-			'Beneficios'
-			
-		]
-	},
-	options: {
-		responsive: true
-	}
-};
-
-window.onload = function() {
-	var ctx = document.getElementById('chart-area').getContext('2d');
-	window.myPie = new Chart(ctx, config);
-};
-
-
-
-
-</script>
-
-
-<%-- 
-<script src='<%=request.getContextPath()+"/js/amcharts.js"%>'></script>
-<script src='<%=request.getContextPath()+"/js/pie.js"%>'></script>
-<script src='<%=request.getContextPath()+"/js/export.min.js"%>'></script>
-<script src='<%=request.getContextPath()+"/js/custom.js"%>'></script> --%>
+<script src='<%=request.getContextPath()+"/js/colapsable.js"%>'></script>
+<script src='<%=request.getContextPath()+"/js/grafica.js"%>'></script>
