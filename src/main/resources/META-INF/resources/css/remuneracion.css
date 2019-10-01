@@ -233,9 +233,7 @@ td.tip:hover span {
     display: block;
     float: right;
 }
-.img-colap{
-	
-}
+
 .active .img-colap{
 -moz-transform:rotate(180deg);
    -webkit-transform:rotate(180deg);
