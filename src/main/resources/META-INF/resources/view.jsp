@@ -208,27 +208,8 @@
 				<div class="col-md-12">
 					<div style="position: relative;width: 100%; background: black;">
 						<img id="imagen-recursosHumanos" alt="" src='<%=request.getContextPath()+"/img/recursoshumanos.jpg"%>' />
-						<h3 style="    position: absolute;
-    top: .8rem;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-shadow: 2px 2px 2px black;">Recursos Humanos</h3>
-						<p style="
-    position: absolute;
-    bottom: 0;
-    width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
-    border-left: solid 4px #cbb874;
-    padding: 0px 8px;
-    font-size: 1.3em;
-    text-align: center;
-    font-weight: 500;
-    line-height: 1.125em;
-    text-shadow: 2px 2px 2px black;">Consulta todos los beneficios que tenemos para ti. (Comedor, sala de lactancia, transporte y más...)</p>
+						<h3 class="titulo-recursosHumanos">Recursos Humanos</h3>
+						<p class="contenidoRecursosHunamos">Consulta todos los beneficios que tenemos para ti. (Comedor, sala de lactancia, transporte y más...)</p>
 					</div>
 				</div><!-- Fin de sección de banner -->
 			</div>
@@ -236,14 +217,14 @@
 	</div><!-- Fin de sección (collapsable, grafica y banner) -->
 	<div class="row" style="margin-top: 1.5rem;">
 		<div class="col-md-6" style="line-height: 1rem;color: #838383;">
-			<small style="color: white;font-weight: 200;">*Costo de acuerdo a póliza de grupo</small><br>
-			<small style="color: white;font-weight: 200;">**De cuerdo aportación anual</small>
+			<small style="font-weight: 200;" class="white">*Costo de acuerdo a póliza de grupo</small><br>
+			<small style="font-weight: 200;" class="white">**De cuerdo aportación anual</small>
 		</div>
 		<div class="offset-md-6">
 		</div>
 		<div class="col-md-6" style="margin-top: 3.5rem;">
 			<img style="vertical-align: bottom;" alt="" src='<%=request.getContextPath()+"/img/ayuda-remuneracion.svg"%>' width="20" height="20" /><strong style="margin-left: .5rem;">¿Tienes alguna duda?</strong><br>
-			<p style="color: white;line-height: 2rem;">Contáctamos remuneraciontototal@cuervo.com.mx</p>
+			<p style="line-height: 2rem;" class="white">Contáctamos remuneraciontototal@cuervo.com.mx</p>
 		</div>
 		<div class="offset-md-6">
 		</div>
