@@ -24,7 +24,7 @@
 				</div>
 				<div class="offset-md-2">
 				</div>
-				<div class="col-md-6" style="line-height: .8rem;text-align: right;">
+				<div class="col-md-6" style="line-height: 1rem;text-align: right;">
 					<p><strong class="remuneracion-fontWeight">Banda: </strong> VIII</p>
 					<p><strong class="remuneracion-fontWeight">Puesto: </strong> Coordinador Gral. RH</p>
 					<p><strong class="remuneracion-fontWeight">Fecha de ingreso: </strong> Miercoles, Noviembre 23, 2005</p>
@@ -165,7 +165,7 @@
 							      <td>$1,500</td>
 							    </tr>
 							      <tr>
-							      <td class="tip"><span><h5>Plan de pensiones*</h5><p>plan de pensiones</p></span>Plan de pensiones*</td>
+							      <td class="tip"><span><h5>Plan de pensiones**</h5><p>plan de pensiones</p></span>Plan de pensiones**</td>
 							      <td></td>
 							      <td>$2,300</td>
 							    </tr>
@@ -186,34 +186,49 @@
 				<div class="col-md-12">
 					<div class="fondo-grafica">
 						<hgroup style="text-align: right;">
-							<h1 style="color: #cbb874;">$335,603</h1>
-							<h6>Compensación total anual</h6>
+							<h1 class="cantidad-total">$335,603</h1>
+							<h5 class="subtitulo-cantidad">Compensación total anual</h5>
 						</hgroup>
-						<div class="grafica-remuneracion top3">					
-							<canvas id="chart-area" style="display: block;height: auto;width: 100%;" height="300" class="chartjs-render-monitor"></canvas>
+						<div class="grafica-remuneracion top3" >					
+							<canvas id="chart-area" style="display: block;height: auto;width: 100%;margin: auto;" height="55%" width="100%" class="chartjs-render-monitor"></canvas>
 						</div>
-						<hgroup class="top3">
-							<h5 class="line-h">Compensación Garantizada ( 77% )</h5>
-							<h5 class="line-h">Compensación Variable ( 13% )</h5>
-							<h5 class="line-h">Mis Beneficios ( 10% )</h5>
-						</hgroup>
+						<div class="top3 ">
+							<div>
+								<div class="cuadrado magenta"></div><p class="texto-grafica">Compensación Garantizada ( 77% )</p>
+							</div>
+							<div>
+								<div class="cuadrado yellow"></div><p class="texto-grafica">Compensación Variable ( 13% )</p>
+							</div>
+							<div>
+								<div class="cuadrado cyan"></div><p class="texto-grafica">Mis Beneficios ( 10% )</p>
+							</div>
+						</div>
 					</div>
 				</div><!-- Fin de sección de grafica -->
 				<div class="col-md-12">
 					<div style="position: relative;width: 100%; background: black;">
 						<img id="imagen-recursosHumanos" alt="" src='<%=request.getContextPath()+"/img/recursoshumanos.jpg"%>' />
-						<h3 style="position: absolute;top: 2rem;width: 100%;text-align: center;text-transform: uppercase;">Recursos Humanos</h3>
+						<h3 style="    position: absolute;
+    top: .8rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px black;">Recursos Humanos</h3>
 						<p style="
     position: absolute;
     bottom: 0;
-    width: 64%;
-    margin-right: 18%;
-    margin-left: 18%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
     border-left: solid 4px #cbb874;
     padding: 0px 8px;
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-align: center;
-    font-weight: 500;">Consulta todos los beneficios que tenemos para ti. (Comedor, sala de lactancia, transporte y más...)</p>
+    font-weight: 500;
+    line-height: 1.125em;
+    text-shadow: 2px 2px 2px black;">Consulta todos los beneficios que tenemos para ti. (Comedor, sala de lactancia, transporte y más...)</p>
 					</div>
 				</div><!-- Fin de sección de banner -->
 			</div>
@@ -221,14 +236,14 @@
 	</div><!-- Fin de sección (collapsable, grafica y banner) -->
 	<div class="row" style="margin-top: 1.5rem;">
 		<div class="col-md-6" style="line-height: 1rem;color: #838383;">
-			<small>*Costo de acuerdo a póliza de grupo</small><br>
-			<small>**De cuerdo a </small>
+			<small style="color: white;font-weight: 200;">*Costo de acuerdo a póliza de grupo</small><br>
+			<small style="color: white;font-weight: 200;">**De cuerdo aportación anual</small>
 		</div>
 		<div class="offset-md-6">
 		</div>
 		<div class="col-md-6" style="margin-top: 3.5rem;">
-			<strong><img alt="" src='<%=request.getContextPath()+"/img/ayuda-remuneracion.svg"%>' width="20" heigth="20" />¿Tienes alguna duda?</strong><br>
-			<p style="color: #838383;">Contáctamos remuneraciontototal@cuervo.com.mx</p>
+			<img style="vertical-align: bottom;" alt="" src='<%=request.getContextPath()+"/img/ayuda-remuneracion.svg"%>' width="20" height="20" /><strong style="margin-left: .5rem;">¿Tienes alguna duda?</strong><br>
+			<p style="color: white;line-height: 2rem;">Contáctamos remuneraciontototal@cuervo.com.mx</p>
 		</div>
 		<div class="offset-md-6">
 		</div>

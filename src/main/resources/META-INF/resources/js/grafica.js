@@ -2,14 +2,11 @@ var totalgm = document.getElementById("garantizada-total-mensual");
 var fullgm = totalgm.getAttribute('data-garantizada-total-mensual');
 var gm = parseFloat(fullgm);
 
+
 window.chartColors = {
-	      red: 'rgb(255, 99, 132)',
-	      orange: 'rgb(255, 159, 64)',
-	      yellow: 'rgb(255, 205, 86)',
-	      green: 'rgb(75, 192, 192)',
-	      blue: 'rgb(54, 162, 235)',
-	      purple: 'rgb(153, 102, 255)',
-	      grey: 'rgb(201, 203, 207)'
+	      yellow: 'rgb(255, 204, 106)',
+	      magenta: 'rgb(255, 58, 103)',
+	      cyan: 'rgb(40, 164, 229)'
 	    };
 
 var config = {
@@ -22,9 +19,9 @@ var config = {
 				10,
 			],
 			backgroundColor: [
-				window.chartColors.red,
-				window.chartColors.orange,
+				window.chartColors.magenta,
 				window.chartColors.yellow,
+				window.chartColors.cyan
 			],
 			label: 'Remuneracion'
 		}],
@@ -32,11 +29,18 @@ var config = {
 			'Garantizada',
 			'Variable',
 			'Beneficios'
-			
 		]
 	},
 	options: {
-		responsive: true
+		responsive: true,
+		legend: {
+			display:false,
+			position: 'bottom',
+            labels: {
+                boxWidth: 20,
+                padding: 20
+            }
+        }
 	}
 };
 
