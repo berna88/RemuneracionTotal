@@ -37,7 +37,7 @@
 		<div class="col-md-12 col-lg-6 col-xl-7">
 			<div class="row">
 				<div class="col-md-12 colapsable-remuneracion">
-					<button type="button" class="collapsible">Compensación Garantizada</button>
+					<button type="button" class="collapsible">Compensación Garantizada <img class="img-colap" style="transition: transform .8s;" alt="" src='<%=request.getContextPath()+"/img/abajo.svg"%>'></button>
 					<div class="content">
 						<div class="table-responsive">
 						  <table class="table-remuneracion" cellpadding="5">
@@ -86,7 +86,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 colapsable-remuneracion">
-					<button type="button" class="collapsible">Compensación Variable</button>
+					<button type="button" class="collapsible">Compensación Variable <img class="img-colap" style="transition: transform .8s;" alt="" src='<%=request.getContextPath()+"/img/abajo.svg"%>'></button>
 					<div class="content">
 					    <div class="table-responsive">
 						  <table class="table-remuneracion" cellpadding="5">
@@ -131,7 +131,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 colapsable-remuneracion">
-					<button type="button" class="collapsible">Mis Beneficios</button>
+					<button type="button" class="collapsible">Mis Beneficios <img class="img-colap" style="transition: transform .8s;" alt="" src='<%=request.getContextPath()+"/img/abajo.svg"%>'></button>
 					<div class="content">
 						<div class="table-responsive">
 						  <table class="table-remuneracion" cellpadding="5">
