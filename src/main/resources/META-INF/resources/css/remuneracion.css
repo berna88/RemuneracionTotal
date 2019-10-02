@@ -191,15 +191,8 @@ td.tip:hover span {
     font-family: Source Sans Pro;
     font-size: 1.125em;
 }
-@media screen and (max-width: 391px) {
-  .texto-grafica{
-	display: inline-block;
-    margin-left: 1rem;
-    font-weight: 500;
-    font-family: Source Sans Pro;
-    font-size: .8em;
-}
-}
+
+
 .titulo-recursosHumanos{
 	position: absolute;
     top: .8rem;
@@ -239,5 +232,41 @@ td.tip:hover span {
    -webkit-transform:rotate(180deg);
    transform:rotate(180deg);
 }
-    
+
+@media screen and (max-width: 991px) {
+  .fondo-grafica{
+  	margin-top: 3em;
+	width: 100%;
+    background: black;
+    padding: 40px 30px;
+    border-radius: 30px;
+    margin-bottom: 2.2rem;
+    box-shadow: 10px 0px 30px -2px #212020;
+}
+}
+@media screen and (max-width: 400px) {
+  .contenidoRecursosHunamos{
+	position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-left: solid 4px #cbb874;
+    padding: 0px 8px;
+    font-size: .9em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.125em;
+    text-shadow: 2px 2px 2px black;
+}
+}
+@media screen and (max-width: 391px) {
+  .texto-grafica{
+	display: inline-block;
+    margin-left: 1rem;
+    font-weight: 500;
+    font-family: Source Sans Pro;
+    font-size: .8em;
+}
+}
 @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}

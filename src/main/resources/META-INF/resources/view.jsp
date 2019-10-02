@@ -37,7 +37,7 @@
 		<div class="col-md-12 col-lg-6 col-xl-7">
 			<div class="row">
 				<div class="col-md-12 colapsable-remuneracion">
-					<button type="button" class="collapsible">Compensación Garantizada <img class="img-colap" style="transition: transform .8s;" alt="" src='<%=request.getContextPath()+"/img/abajo.svg"%>'></button>
+					<button type="button" class="collapsible">Compensación Garantizada <i alt="" class="fas fa-angle-down img-colap" style="transition: transform .8s;"></i></button>
 					<div class="content">
 						<div class="table-responsive">
 						  <table class="table-remuneracion" cellpadding="5">
@@ -86,7 +86,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 colapsable-remuneracion">
-					<button type="button" class="collapsible">Compensación Variable <img class="img-colap" style="transition: transform .8s;" alt="" src='<%=request.getContextPath()+"/img/abajo.svg"%>'></button>
+					<button type="button" class="collapsible">Compensación Variable <i alt="" class="fas fa-angle-down img-colap" style="transition: transform .8s;"></i></button>
 					<div class="content">
 					    <div class="table-responsive">
 						  <table class="table-remuneracion" cellpadding="5">
@@ -131,7 +131,7 @@
 					</div>
 				</div>
 				<div class="col-md-12 colapsable-remuneracion">
-					<button type="button" class="collapsible">Mis Beneficios <img class="img-colap" style="transition: transform .8s;" alt="" src='<%=request.getContextPath()+"/img/abajo.svg"%>'></button>
+					<button type="button" class="collapsible">Mis Beneficios <i alt="" class="fas fa-angle-down img-colap" style="transition: transform .8s;"></i></button>
 					<div class="content">
 						<div class="table-responsive">
 						  <table class="table-remuneracion" cellpadding="5">
@@ -224,7 +224,7 @@
 		</div>
 		<div class="col-md-6" style="margin-top: 3.5rem;">
 			<img style="vertical-align: bottom;" alt="" src='<%=request.getContextPath()+"/img/ayuda-remuneracion.svg"%>' width="20" height="20" /><strong style="margin-left: .5rem;">¿Tienes alguna duda?</strong><br>
-			<p style="line-height: 2rem;" class="white">Contáctamos remuneraciontototal@cuervo.com.mx</p>
+			<p style="line-height: 2rem;" class="white">Contáctanos: remuneraciontotal@cuervo.com.mx</p>
 		</div>
 		<div class="offset-md-6">
 		</div>
