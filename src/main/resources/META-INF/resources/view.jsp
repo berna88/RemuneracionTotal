@@ -18,8 +18,8 @@
 			<div class="row align-items-center" >
 				<div class="col-md-4">
 					<hgroup>
-						<h4 style="font-weight: 300;line-height: .9;">Robles Marin</h4>
-						<h2><strong class="remuneracion-fontWeight">Marian</strong></h2>
+						<h4 style="font-weight: 300;line-height: .9;">Vidal Herrera</h4>
+						<h2><strong class="remuneracion-fontWeight">Carlos</strong></h2>
 					</hgroup>
 				</div>
 				<div class="offset-md-2">
